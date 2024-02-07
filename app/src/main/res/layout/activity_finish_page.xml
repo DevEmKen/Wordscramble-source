@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_finish_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.em.wscramble.finishPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/foundWordsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Found Words"/>
+        <ProgressBar
+            android:id="@+id/foundWordsBar"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:max="100"/>
+        <TextView
+            android:id="@+id/pointsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Possible Points"/>
+        <ProgressBar
+            android:id="@+id/pointsBar"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:max="100"/>
+
+
+        <ScrollView
+            android:id="@+id/wordsOutput"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="300dp"
+            android:fontFamily="monospace"
+            android:scrollbars="vertical"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/boardText"
+                android:fontFamily="monospace"
+                android:textSize="10pt"
+                android:text="A A A A\nA A A A\nA A A A\nA A A A"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp" />
+
+            <Button
+                android:id="@+id/okBtn"
+                android:layout_marginLeft="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:text="Ok" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
